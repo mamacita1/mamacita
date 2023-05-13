@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d2591;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.heart::before,
+.heart::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #ca5757;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart {
+    transition: 0.3s;
+    color: #5d2591;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 200px;
+    width: 200px;
+    height: 200px;
+    background-color: #ca5757;
+    transform: rotate(45deg);
+    position: relative;
+}
+
+.heart::before {
+    top: -100px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -100px;
+}
+
+.wrapper span {
+    position: relative;
+    bottom: 30px;
+    left: -20px;
+    z-index: 10;
+    transform: rotate(-45deg);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wrapper2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2 span {
+    background-color: #ca5757;
+    padding: 10px;
+    border-radius: 20px;
+    transform: rotate(0);
+}
+
+.mamacita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.mamacita img {
+    width: 150px;
+}
